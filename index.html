@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar jQuery Duniailkom</title>
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function() {
+            // $("#tombol").click(function() {
+            //     $(this).after('<p>Sedang Belajar jQuery di Duniailkom</p>');
+            // });
+
+
+
+            // $("#tombol_hide").click(function() {
+            //     $("h1").hide();
+            // });
+
+            // $("#tombol_show").click(function() {
+            //     $("h1").show();
+            // });
+
+            // $("#tombol_small").click(function() {
+            //     $("h1").css("font-size", "20px");
+            // });
+
+            // $("#tombol_red").click(function() {
+            //     $("h1").css("color", "red");
+            // });
+
+
+            $("#tombol").click(function() {
+                $("p").css("color", "red");
+                $("#belajar").css("color", "green");
+                $(".warna").css("color", "blue");
+                $("#test.saja").css("color", "yellow");
+                $("div p.warna").css("color", "pink");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- <h1>Belajar jQuery di Duniailkom</h1>
+    <button id="tombol">Click Me!</button> -->
+
+
+    <!--     
+    <h1>Belajar jQuery di Duniailkom</h1>
+    <button id="tombol_hide">Sembunyikan</button>
+    <button id="tombol_show">Tampilkan</button>
+    <button id="tombol_small">Perkecil</button>
+    <button id="tombol_red">Merahkan</button> -->
+
+
+    <p>
+        Sebuah paragraf tanpa atribut apapun
+    </p>
+    <p id="belajar">
+        Sebuah paragraf dengan id = "belajar"
+    </p>
+    <p class="warna">
+        Sebuah paragraf dengan class = "warna"
+    </p>
+    <p id="test" class="saja">
+        Sebuah paragraf dengan id="test" class="saja"
+    </p>
+    <div>
+        <p class="warna">
+            Sebuah paragraf tanpa atribut apapun
+        </p>
+    </div>
+    <button id="tombol">Action</button>
+
+</body>
+
+</html>
