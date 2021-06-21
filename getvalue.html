@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar jQuery Duniailkom</title>
+    <script src="jquery-3.6.0.js"></script>
+    <!-- <script src="src.js"></script> -->
+    <script>
+        $(document).ready(function() {
+
+            $("#tombol1").click(function() {
+
+                //untuk mngambil nilainya saja
+                // var nilai = $("#paragraf").text();
+
+                //untuk mengambil nilai dengan format html
+                // var nilai = $("#paragraf").html();
+
+                //khusus untuk form 
+                var nilai = $("#nama").val();
+
+
+
+                alert(nilai);
+            })
+
+            $("#tombol2").click(function() {
+
+                var nilai = $("#kota").val();
+                alert(nilai);
+            })
+
+
+            $("#tombol").click(function() {
+                var nilai1 = $("#keren:checked").val();
+                var nilai2 = $("#ganteng:checked").val();
+                var nilai3 = $("#cool:checked").val();
+
+                if (nilai1 == undefined) {
+                    nilai1 = "";
+                }
+                if (nilai2 == undefined) {
+                    nilai2 = "";
+                }
+                if (nilai3 == undefined) {
+                    nilai3 = "";
+                }
+
+                alert(nilai1 + ' ' + nilai2 + ' ' + nilai3);
+            })
+
+        });
+    </script>
+</head>
+
+<body>
+    <!-- <p id="paragraf">
+        Sedang belajar <em>jQuery</em> di <b>Duniailkom...</b>
+    </p>
+    <button id="tombol">Ambil Nilai</button> -->
+
+    Nama: <input type="text" id="nama" value="Duniailkom...">
+    <button id="tombol1">Ambil Nilai</button>
+
+
+    <br> Pilih Kota:
+
+
+    <select id="kota" name="kota">
+       <option value="jakarta">Jakarta</option>
+       <option value="bandung">Bandung</option>
+       <option value="bogor">Bogor</option>
+    </select>
+    <button id="tombol2">Ambil Nilai</button>
+    <br>
+    <br> Saya itu:
+    <input type="checkbox" id="keren" value="Saya Keren"> Keren
+    <input type="checkbox" id="ganteng" value="Saya Ganteng"> Ganteng
+    <input type="checkbox" id="cool" value="Saya Cool"> Cool
+    <br><br>
+    <button id="tombol">Ambil Nilai</button>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar jQuery Duniailkom</title>
+    <script src="jquery-3.6.0.js"></script>
+    <!-- <script src="src.js"></script> -->
+    <script>
+        $(document).ready(function() {
+
+            $("#paragraf").click(function() {
+                $("#paragraf").css("color", "green");
+            });
+
+            $("#paragraf").mouseover(function() {
+                $("#paragraf").css("background-color", "silver");
+            });
+
+            $("#paragraf").mouseout(function() {
+                $("#paragraf").css("background-color", "pink");
+            });
+
+            $("#paragraf").dblclick(function() {
+                $("#paragraf").css("border", "solid 2px black");
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <p id="paragraf">
+        Silahkan klik saya
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar jQuery Duniailkom</title>
+    <script src="jquery-3.6.0.js"></script>
+    <!-- <script src="src.js"></script> -->
+    <script>
+        $(document).ready(function() {
+
+            $("#tombol").click(function() {
+                $("#paragraf1").text("<b>#jQuery</b> is Amazing...");
+                $("#paragraf2").html("<b>#jQuery</b> is Amazing...");
+            })
+
+            $("#tombolform").click(function() {
+                $("#nama").val("Joko Sulistyo");
+            })
+
+
+        });
+    </script>
+</head>
+
+<body>
+    <p id="paragraf1">
+        Sedang belajar jQuery di Duniailkom...
+    </p>
+    <p id="paragraf2">
+        Sedang belajar jQuery di Duniailkom...
+    </p>
+    <button id="tombol">Change!</button>
+
+    <br>Nama: <input type="text" id="nama">
+    <button id="tombolform">Change!</button>
+
+
+
+</body>
+
+</html>
