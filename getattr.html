@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar jQuery Duniailkom</title>
+    <script src="jquery-3.6.0.js"></script>
+    <!-- <script src="src.js"></script> -->
+    <script>
+        $(document).ready(function() {
+            // $("#ambil").click(function() {
+            //     var nilai1 = $("a[title]").attr("href");
+            //     var nilai2 = $("a[title]").attr("title");
+            //     var nilai3 = $("a[title]").attr("target");
+            //     $("#tekape").html(nilai1 + "<br>" + nilai2 + "<br>" + nilai3);
+            // })
+
+            // $("#tambah").click(function() {
+            //     $("#link_jquery").attr("href",
+            //         "https://www.duniailkom.com/tutorial-belajar-jquery-bagi-pemula/");
+            //     $("#link_jquery").attr("title", "Belajar jQuery yuk bro...");
+            // })
+
+            // $("#ambil").click(function() {
+            //     var nilai1 = $("#box").css("width");
+            //     var nilai2 = $("#box").css("height");
+            //     var nilai3 = $("#box").css("background-color");
+            //     $("#tekape").html(nilai1 + "<br>" + nilai2 + "<br>" + nilai3);
+            // })
+
+            // $("#tukar").click(function() {
+            //     $("#box").css("width", "500px");
+            //     $("#box").css("height", "120px");
+            //     $("#box").css("background-color", "yellow");
+            // })
+
+            // $("#tambah_warna").click(function() {
+            //     $("#box").addClass("add_warna");
+            // })
+
+            // $("#tambah_border").click(function() {
+            //     $("#box").addClass("add_border");
+            // })
+
+            // $("#tambah_bayang").click(function() {
+            //     $("#box").addClass("add_bayang");
+            // })
+
+
+            // $("#hapus_warna").click(function() {
+            //     $("#box").removeClass("add_warna");
+            // })
+
+            // $("#hapus_border").click(function() {
+            //     $("#box").removeClass("add_border");
+            // })
+
+            // $("#hapus_bayang").click(function() {
+            //     $("#box").removeClass("add_bayang");
+            // })
+
+
+
+            $("#warna").click(function() {
+                $("#box").toggleClass("add_warna");
+            })
+
+            $("#border").click(function() {
+                $("#box").toggleClass("add_border");
+            })
+
+            $("#bayang").click(function() {
+                $("#box").toggleClass("add_bayang");
+            })
+
+        });
+    </script>
+
+    <style>
+        /* #box {
+            width: 300px;
+            height: 80px;
+            background-color: pink;
+            border: 2px solid black;
+        } */
+        
+        #box {
+            width: 300px;
+            height: 80px;
+        }
+        
+        .add_warna {
+            background-color: rgb(243, 8, 47);
+        }
+        
+        .add_border {
+            border: 2px solid black;
+        }
+        
+        .add_bayang {
+            box-shadow: 7px 7px silver;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- <h2>Belajar jQuery Duniailkom</h2>
+    <a href="https://www.duniailkom.com/tutorial-belajar-jquery-bagi-pemula/" title="Belajar jQuery yuk bro..." target="_blank">
+         Tutorial jQuery Duniailkom
+    </a>
+    <br><br>
+    <button id="ambil">Ambil Atribut</button>
+    <p id="tekape"></p> -->
+
+
+    <!-- <h2>Belajar jQuery Duniailkom</h2>
+    <p>
+        <a id="link_jquery">Tutorial jQuery Duniailkom</a>
+    </p>
+    <button id="tambah">Tambah Atribut</button> -->
+
+
+    <!-- <div id="box"></div>
+    <br>
+    <button id="tukar">Ambil Property CSS</button>
+    <p id="tekape"></p> -->
+
+
+    <div id="box" class="add_warna add_border add_bayang"></div>
+    <br>
+    <button id="warna">hapus Warna</button>
+    <button id="border">hapus Border</button>
+    <button id="bayang">hapus Bayang</button>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar jQuery Duniailkom</title>
+    <script src="jquery-3.6.0.js"></script>
+    <!-- <script src="src.js"></script> -->
+    <script>
+        $(document).ready(function() {
+            //remove digunakan untuk menghapus element
+            // $("#hapus_html").click(function() {
+            //     $("#list_html").remove();
+            // })
+
+            // $("#hapus_css").click(function() {
+            //     $("#list_css").remove();
+            // })
+
+            // $("#hapus_php").click(function() {
+            //     $("#list_php").remove();
+            // })
+
+            // $("#hapus_all").click(function() {
+            //     $("#belajar").remove();
+            // })
+
+
+            //empty digunakan untuk mnegosongkan nilainya
+            $("#tambah").click(function() {
+                $("#belajar").append("<li>Belajar jQuery di Duniailkom</li>");
+            })
+
+            $("#kosong").click(function() {
+                $("#belajar").empty();
+            })
+
+            $("#hapus").click(function() {
+                $("#belajar").remove();
+            })
+        });
+    </script>
+</head>
+
+<body>
+
+    <body>
+        <!-- <button id="hapus_html">Hapus HTML</button>
+        <button id="hapus_css">Hapus CSS</button>
+        <button id="hapus_php">Hapus PHP</button>
+        <button id="hapus_all">Hapus Semua!</button> -->
+
+        <button id="tambah">Tambah jQuery</button>
+        <button id="kosong">Kosongkan</button>
+        <button id="hapus">Hapus Semua</button>
+
+        <ul id="belajar">
+            <li id="list_html">Belajar HTML di Duniailkom</li>
+            <li id="list_css">Belajar CSS di Duniailkom</li>
+            <li id="list_php">Belajar PHP di Duniailkom</li>
+            <li id="list_js">Belajar JavaScript di Duniailkom</li>
+            <li id="list_mysql">Belajar MySQL di Duniailkom</li>
+        </ul>
+
+    </body>
+
+</html>

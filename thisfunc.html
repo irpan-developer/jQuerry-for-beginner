@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar jQuery Duniailkom</title>
+    <script src="jquery-3.6.0.js"></script>
+    <!-- <script src="src.js"></script> -->
+    <script>
+        $(document).ready(function() {
+
+
+            // $("#box").click(function() {
+            //     $(this).html("Sudah di Klik");
+            //     $(this).css("background-color", "silver");
+            // })
+
+
+            $("div").click(function() {
+                var lebar_box = $(this).width();
+                var tinggi_box = $(this).height();
+                $(this).width(lebar_box + 10);
+                $(this).height(tinggi_box + 10);
+            })
+
+        });
+    </script>
+
+    <style>
+        div {
+            width: 300px;
+            height: 80px;
+            background-color: pink;
+            border: 2px solid black;
+            line-height: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Belajar jQuery Duniailkom</h2>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+
+</body>
+
+</html>
+
+terakhir tutorial 16
