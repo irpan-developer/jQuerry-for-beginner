@@ -9,12 +9,18 @@
     <script>
         $(document).ready(function() {
 
+            // jQuery.fn.toggleOption = function(show) {
+            //     jQuery(this).toggle(show);
+            //     if (show) {
+            //         if (jQuery(this).parent('span.toggleOption').length)
+            //             jQuery(this).unwrap();
+            //     } else {
+            //         if (jQuery(this).parent('span.toggleOption').length == 0)
+            //             jQuery(this).wrap('<span class="toggleOption" style="display: none;" />');
+            //     }
+            // };
 
-            // $("#box").click(function() {
-            //     $(this).html("Sudah di Klik");
-            //     $(this).css("background-color", "silver");
-            // })
-
+            $(".target").append('<option value="option2">Option 3</option>')
 
             $("div").click(function() {
                 var lebar_box = $(this).width();
@@ -22,6 +28,16 @@
                 $(this).width(lebar_box + 10);
                 $(this).height(tinggi_box + 10);
             })
+
+
+            $(".target").change(function() {
+                alert("Handler for .change() called.");
+            });
+
+            $("#other").click(function() {
+                $(".target").change();
+            });
+
 
         });
     </script>
@@ -39,10 +55,23 @@
 </head>
 
 <body>
-    <h2>Belajar jQuery Duniailkom</h2>
+    <!-- <h2>Belajar jQuery Duniailkom</h2>
     <div id="box1"></div>
     <div id="box2"></div>
-    <div id="box3"></div>
+    <div id="box3"></div> -->
+
+    <form>
+        <input class="target" type="text" value="Field 1">
+        <br>
+        <select class="target">
+          <option value="option1" selected="selected">Option 1</option>
+          <option value="option2">Option 2</option>
+        </select>
+    </form>
+    <br>
+    <div id="other">
+        Trigger the handler
+    </div>
 
 </body>
 
